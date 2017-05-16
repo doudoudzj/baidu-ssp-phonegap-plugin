@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-baidu-ssp",
+  "version": "1.1.2",
+  "description": "baidu ssp cordova plugin",
+  "cordova": {
+    "id": "cordova-plugin-baidu-ssp",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doudoudzj/cordova-plugin-baidu-ssp.git"
+  },
+  "keywords": [
+    "cordova",
+    "baidu-ssp",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "doudoudzj",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/doudoudzj/cordova-plugin-baidu-ssp/issues"
+  },
+  "homepage": "https://github.com/doudoudzj/cordova-plugin-baidu-ssp"
+}
