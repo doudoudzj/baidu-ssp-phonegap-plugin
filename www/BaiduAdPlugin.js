@@ -1,14 +1,14 @@
 var baiduAd = {
-	 AD_POSITION: {
-	     TOP_LEFT:1,
-		 TOP_CENTER:2,
-		 TOP_RIGHT:3,
-		 MIDDLE_LEFT:4,
-		 MIDDLE_CENTER:5,
-		 MIDDLE_RIGHT:6,
-		 BOTTOM_LEFT:7,
-		 BOTTOM_CENTER:8,
-		 BOTTOM_RIGHT:9
+    AD_POSITION: {
+        TOP_LEFT: 1,
+        TOP_CENTER: 2,
+        TOP_RIGHT: 3,
+        MIDDLE_LEFT: 4,
+        MIDDLE_CENTER: 5,
+        MIDDLE_RIGHT: 6,
+        BOTTOM_LEFT: 7,
+        BOTTOM_CENTER: 8,
+        BOTTOM_RIGHT: 9
     },
     AD_SIZE: {
         BANNER: "BANNER",
@@ -18,68 +18,68 @@ var baiduAd = {
         SMART_BANNER: "SMART_BANNER"
     },
     AdEvent: {
-        onBannerDismiss:"onBannerDismiss",
-        onBannerFailedReceive:"onBannerFailedReceive",
-        onBannerLeaveApplication:"onBannerLeaveApplication",
-        onBannerPresent:"onBannerPresent",
-        onBannerReceive:"onBannerReceive",
-        onInterstitialDismiss:"onInterstitialDismiss",
-        onInterstitialFailedReceive:"onInterstitialFailedReceive",
-        onInterstitialLeaveApplication:"onInterstitialLeaveApplication",
-        onInterstitialPresent:"onInterstitialPresent",
-        onInterstitialReceive:"onInterstitialReceive",
-        onSplashPresent:"onSplashPresent",
-        onSplashFailed:"onSplashFailed",
-        onSplashDismissed:"onSplashDismissed",
-        onSplashClick:"onSplashClick"
+        onBannerDismiss: "onBannerDismiss",
+        onBannerFailedReceive: "onBannerFailedReceive",
+        onBannerLeaveApplication: "onBannerLeaveApplication",
+        onBannerPresent: "onBannerPresent",
+        onBannerReceive: "onBannerReceive",
+        onInterstitialDismiss: "onInterstitialDismiss",
+        onInterstitialFailedReceive: "onInterstitialFailedReceive",
+        onInterstitialLeaveApplication: "onInterstitialLeaveApplication",
+        onInterstitialPresent: "onInterstitialPresent",
+        onInterstitialReceive: "onInterstitialReceive",
+        onSplashPresent: "onSplashPresent",
+        onSplashFailed: "onSplashFailed",
+        onSplashDismissed: "onSplashDismissed",
+        onSplashClick: "onSplashClick"
     },
-    FunNames:{
-        hideBanner:"baiduHideBanner",
-        showBannerAbsolute:"baiduShowBannerAbsolute",
-        showBanner:"baiduShowBanner",
-        initBanner:"baiduShowSplash",
-        isInterstitialReady:"baiduIsInterstitialReady",
-        showInterstitial:"baiduShowInterstitial",
-        cacheInterstitial:"baiduCacheInterstitial",
-        disposePlugin : "disposePlugin"
+    FunNames: {
+        hideBanner: "baiduHideBanner",
+        showBannerAbsolute: "baiduShowBannerAbsolute",
+        showBanner: "baiduShowBanner",
+        initBanner: "baiduShowSplash",
+        isInterstitialReady: "baiduIsInterstitialReady",
+        showInterstitial: "baiduShowInterstitial",
+        cacheInterstitial: "baiduCacheInterstitial",
+        disposePlugin: "disposePlugin"
     },
-	    hideBanner: function (bannerName, successCallback, failureCallback) {
+    hideBanner: function (bannerName, successCallback, failureCallback) {
         cordova.exec(
             successCallback,
             failureCallback,
             'BaiduAdPlugin',
             'baiduHideBanner',
             [
-            bannerName
+                bannerName
             ]
         );
     },
-    showBannerAbsolute: function (x,y,appID,bannerID,bannerName, successCallback, failureCallback) {
+    showBannerAbsolute: function (x, y, appID, bannerID, bannerName, successCallback, failureCallback) {
         cordova.exec(
             successCallback,
             failureCallback,
             'BaiduAdPlugin',
             'baiduShowBannerAbsolute',
             [
-    {x:x,y:y,bannerName:bannerName,appID:appID,bannerID:bannerID}
+                { x: x, y: y, bannerName: bannerName, appID: appID, bannerID: bannerID }
             ]
         );
     },
-    showBanner: function (position,marginY,appID,bannerID,bannerName, successCallback, failureCallback) {
+    showBanner: function (position, marginY, appID, bannerID, bannerName, successCallback, failureCallback) {
         cordova.exec(
             successCallback,
             failureCallback,
             'BaiduAdPlugin',
             'baiduShowBanner',
             [
-    {position:position,marginY:marginY,appID:appID,bannerID:bannerID,bannerName:bannerName}
+                { position: position, marginY: marginY, appID: appID, bannerID: bannerID, bannerName: bannerName }
             ]
         );
     },
-    
-   
 
-    isInterstitialReady: function ( successCallback, failureCallback) {
+
+
+    isInterstitialReady: function (successCallback, failureCallback) {
         cordova.exec(
             successCallback,
             failureCallback,
@@ -103,25 +103,25 @@ var baiduAd = {
         );
     },
 
-    cacheInterstitial: function (appID,interstitialID,successCallback, failureCallback) {
+    cacheInterstitial: function (appID, interstitialID, successCallback, failureCallback) {
         cordova.exec(
             successCallback,
             failureCallback,
             'BaiduAdPlugin',
             'baiduCacheInterstitial',
             [
-	{appID:appID,interstitialID:interstitialID}
+                { appID: appID, interstitialID: interstitialID }
             ]
         );
     },
-    showSplash: function (appID,splashID,successCallback, failureCallback) {
+    showSplash: function (appID, splashID, successCallback, failureCallback) {
         cordova.exec(
             successCallback,
             failureCallback,
             'BaiduAdPlugin',
             'baiduShowSplash',
             [
-	{appID:appID,splashID:splashID}
+                { appID: appID, splashID: splashID }
             ]
         );
     },
@@ -132,7 +132,7 @@ var baiduAd = {
             failureCallback,
             'BaiduAdPlugin',
             'disposePlugin', [
-                
+
             ]);
     }
 };
