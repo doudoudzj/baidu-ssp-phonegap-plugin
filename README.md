@@ -7,12 +7,12 @@
 ### 怎么在html5应用中加入百度ssp移动联盟广告呢?可以使用cordova命令行远程或者本地方式安装本百度移动广告插件
 在命令行中输入<br/>
 ```
-cordova plugin add https://github.com/baidumobad/baidu-ssp-phonegap-plugin.git
+cordova plugin add https://github.com/doudoudzj/cordova-plugin-baidu-ssp.git
 ```
 或者把插件下载到本地解压后输入命令
 <br/>
 ```
-cordova plugin add c:\baidu-ssp-phonegap-plugin
+cordova plugin add ./cordova-plugin-baidu-ssp
 ```
 ### 在phonegap 类的html5应用中展示百度移动广告横幅类型广告
 测试前把appID和bannerID替换为你在百度ssp申请到的真实的参数,    
