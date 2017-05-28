@@ -20,6 +20,7 @@
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="BaiduAdPlugin" >
                 <param name="android-package" value="com.baidu.cordova.plugin.BaiduAdPlugin"/>
+                <param name="android-package" value="com.crogram.diandian.BaiduAdsPlugin"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
