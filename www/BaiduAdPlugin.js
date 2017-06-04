@@ -41,8 +41,8 @@ var baiduAd = {
         isInterstitialReady: "baiduIsInterstitialReady",
         showInterstitial: "baiduShowInterstitial",
         cacheInterstitial: "baiduCacheInterstitial",
-        disposePlugin: "disposePlugin",
-        setKeywords: "setKeywords"
+        disposePlugin: "disposePlugin"
+        // setKeywords: "setKeywords"
     },
     hideBanner: function (bannerName, successCallback, failureCallback) {
         cordova.exec(
@@ -135,15 +135,15 @@ var baiduAd = {
             'disposePlugin', [
 
             ]);
-    },
-    setKeywords: function (keywords, successCallback, failureCallback) {
-        cordova.exec(
-            successCallback,
-            failureCallback,
-            'BaiduAdsPlugin',
-            'setKeywords', [
-                keywords
-            ]);
     }
+    // setKeywords: function (keywords, successCallback, failureCallback) {
+    //     cordova.exec(
+    //         successCallback,
+    //         failureCallback,
+    //         'BaiduAdsPlugin',
+    //         'setKeywords', [
+    //             keywords
+    //         ]);
+    // }
 };
 module.exports = baiduAd;
