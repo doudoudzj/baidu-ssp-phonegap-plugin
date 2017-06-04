@@ -13,8 +13,6 @@
     <js-module src="www/BaiduAdPlugin.js" name="BaiduAd">
         <clobbers target="window.baiduAd"/>
     </js-module>
-    
-    
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
